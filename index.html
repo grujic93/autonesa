@@ -4,15 +4,15 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Auto Neša Mix</title>
-		<meta name="description" content="Restoran Orač se nalazi u ulici Knjaževačka broj 3 u Nišu. Osnovan je 1995. godine sa željom da svojim kvalitetom zauzme stalno mesto na mapi najboljih restorana ovog dela Srbije.">
+		<meta name="description" content="Pružanje svih vrsta održavanja motornih vozila: popravka, prodaja i ugradnja delova, farbanje automobila bojama vodećeg nemačkog proizvođača auto-reparatur premaza STANDOX (Standoblue).">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Cabin:400,700&display=swap" rel="stylesheet">
-		<meta property="og:title" content="Restoran Orač Niš">
-		<meta property="og:description" content="Restoran Orač se nalazi u ulici Knjaževačka broj 3 u Nišu. Osnovan je 1995. godine sa željom da svojim kvalitetom zauzme stalno mesto na mapi najboljih restorana ovog dela Srbije." />
+		<meta property="og:title" content="Auto Neša Mix">
+		<meta property="og:description" content="Pružanje svih vrsta održavanja motornih vozila: popravka, prodaja i ugradnja delova, farbanje automobila bojama vodećeg nemačkog proizvođača auto-reparatur premaza STANDOX (Standoblue)." />
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="">
-		<meta property="og:image" content="https://restoranorac.rs/images/restoran-orac-ulaz.jpg">
+		<meta property="og:image" content="/images/website-preview.jpeg">
 		<link rel="icon" type="image/png" href="favicon.png">
 		<link rel="apple-touch-icon" href="favicon.png">
 		<!-- Place favicon.ico in the root directory -->
@@ -66,8 +66,8 @@
 			</header>
 			<div class="site-content">
 				<section class="hero-section uk-cover-container no-gap">
-					<div class="hero-slide-wrp" uk-slideshow="ratio: false; animation: fade; autoplay: true">
-						 <ul class="uk-slideshow-items" uk-height-viewport>
+					<div class="hero-slide-wrp" data-uk-slideshow="ratio: false; animation: fade; autoplay: true">
+						 <ul class="uk-slideshow-items" data-uk-height-viewport>
 							<li>
 								<div class="hero-bgr uk-animation-reverse" uk-scrollspy="cls: uk-animation-kenburns; repeat: true" style="background-image: url('images/car-1.jpeg');"></div>
 							</li>
@@ -115,8 +115,8 @@
 
 				<section id="o-nama" class="about-us has-bgr gray-bgr">
 					<div class="container">
-						<div class="uk-grid uk-grid-large uk-child-width-1-2@l" data-uk-grid>
-							<div>
+						<div class="uk-grid uk-grid-large uk-child-width-1-2@l" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 400">
+							<div class="animation-fade-item">
 								<span class="small-label">// o nama</span>
 								<h2 class="h1">Tim profesionalaca Vama na usluzi</h2>
 								<p>Tajna našeg uspešnog dugogodišnjeg poslovanja leži u iskusnom, uigranom i stručnom timu koji, prateći nove tehnologije i trendove, uspešno i u rekordnom roku rešava svaki vaš zahtev.</p>
@@ -137,7 +137,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="about-us-images">
+							<div class="about-us-images animation-fade-item">
 								<div class="image-wrp" data-uk-parallax="y: 70">
 									<img src="images/radionica-small.jpg" alt="radionica">
 								</div>
@@ -150,9 +150,9 @@
 				</section>
 
 				<section class="services-section" id="usluge">
-					<div class="container">
-						<span class="small-label">// Usluge</span>
-						<h2 class="h1 uk-margin-medium-bottom">Stručnost i višegodišnje iskustvo</h2>
+					<div class="container" data-uk-scrollspy="target: > .animation-fade-item; cls: uk-animation-fade; delay: 400">
+						<span class="small-label animation-fade-item">// Usluge</span>
+						<h2 class="h1 uk-margin-medium-bottom animation-fade-item">Stručnost i višegodišnje iskustvo</h2>
 						<div class="uk-grid uk-grid-collapse uk-child-width-1-4@l uk-child-width-1-2@s" data-uk-grid data-uk-scrollspy="target: > div; cls: uk-animation-fade; delay: 400">
 							<div class="card-column">
 								<div class="card-wrp last-remove-margin">
@@ -216,11 +216,11 @@
 
 				<section id="farbanje" class="has-bgr main-color-bgr painting-section">
 					<div class="container">
-						<div class="uk-grid uk-grid-collapse" data-uk-grid>
-							<div class="image-column last-remove-margin uk-width-2-5@l" data-uk-parallax="y: -70">
+						<div class="uk-grid uk-grid-collapse" data-uk-grid data-uk-scrollspy="target: .animation-fade-item; cls: uk-animation-fade; delay: 400">
+							<div class="image-column last-remove-margin uk-width-2-5@l animation-fade-item" data-uk-parallax="y: -70">
 								<img class="bgr-img" src="images/farbanje-vozila.jpg" alt="slika">
 							</div>
-							<div class="text-column uk-width-3-5@l" data-uk-parallax="y: 70">
+							<div class="text-column uk-width-3-5@l animation-fade-item" data-uk-parallax="y: 70">
 								<span class="small-label">// Standoblue (Standox)</span>
 								<h2>Farbanje motornih vozila po nemačkim standardima kvaliteta </h2>
 								<p>Predstavljamo vam Standox - jednog od vodećih nemačkih proizvođača boja i lakova u oblasti auto-reparature u u svetu!</p>
@@ -230,17 +230,17 @@
 									<li>Obezbeđuje neverovatnu preciznost pri nijansiranju boje, usled upotrebe posebno odabranih i izuzetno finih metalnih pigmenata.</li>
 									<li>Bojenje koje odoleva svim vremenskim uslovima zahvaljujući perfektnim regulatorima viskoziteta (gustine) boje.</li>
 								</ul>
-								<img width="100" class="logo-img" src="images/standox-logo.png" alt="logo">
+								<a href="https://www.standox.com/in/en_IN/products/standoblue.html" target="_blank"><img width="100" class="logo-img" src="images/standox-logo.png" alt="logo"></a>
 							</div>
 						</div>
 					</div>
 				</section>
 
-				<section class="gallery-section has-bgr gray-bgr" id="galerija" >
-					<div class="container">
-						<span class="small-label">// Galerija</span>
-						<h2 class="h1">Naš rad</h2>
-						<div class="uk-child-width-1-2@s uk-child-width-1-4@m gallery-wrp uk-grid uk-grid-small" data-uk-grid data-uk-lightbox>
+				<section class="gallery-section has-bgr gray-bgr" id="galerija">
+					<div class="container" data-uk-scrollspy="target: > .animation-fade-item; cls: uk-animation-fade; delay: 400">
+						<span class="small-label animation-fade-item">// Galerija</span>
+						<h2 class="h1 animation-fade-item">Naš rad</h2>
+						<div class="uk-child-width-1-2@s uk-child-width-1-4@m gallery-wrp uk-grid uk-grid-small" data-uk-grid data-uk-lightbox data-uk-scrollspy="target: > div; cls: > uk-animation-fade; delay: 400">
 							<div>
 								<div class="img-wrp">
 									<a href="images/galerija-1.jpg">
@@ -338,27 +338,16 @@
 
 			<footer class="site-footer">
 				<div class="container">
-					<div class="footer-top uk-grid uk-grid-large uk-flex-between">
-						<div class="uk-width-auto@l uk-width-1-2@s uk-margin-medium-bottom">
+					<div class="uk-grid uk-grid-large uk-flex-between uk-flex-middle" data-uk-grid>
+						<div class="uk-width-auto@m uk-margin-top uk-margin-bottom logo-column">
 							<a class="footer-logo" href="/" rel="home">
-								<img alt="" src="images/footer-logo.svg">
+								<img alt="" src="images/logo.png">
 							</a>
 						</div>
-						<div class="uk-width-1-4@l uk-width-1-2@s uk-margin-medium-bottom uk-text-right follow-us-wrp">
-							<h3>PRATITE NAS</h3>
-							<div class="footer-social-icons">
-								<a target="_blank" rel="noopener" href="https://www.instagram.com/restoran_orac_nis/">
-									<img alt="instagram-icon" src="images/instagram.svg">
-								</a>
-								<a target="_blank" rel="noopener" href="https://www.facebook.com/kafanaorac/">
-									<img alt="fb-icon" src="images/ico-fb.svg">
-								</a>
-							</div>
+						<div class="uk-width-auto@m uk-text-right site-info uk-margin-top uk-margin-bottom">
+							<p class="uk-margin-remove-bottom">Auto Neša Mix &copy;2023. Sva prava zadržana.</p>
 						</div>
 					</div><!-- footer-top -->
-					<div class="site-info">
-						<p>Restoran Orač &copy;2020. Sva prava zadržana.</p>
-					</div><!-- .site-info -->
 				</div><!-- container -->
 			</footer>
 
