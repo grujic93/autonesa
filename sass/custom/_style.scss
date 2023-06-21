@@ -1070,15 +1070,19 @@ p:empty {
 }
 
 .main-info-section {
+	overflow: hidden;
 	.icon-text-wrp {
 		position: relative;
 		display: flex;
 		align-items: center;
 		color: #fff;
+		a, p {
+			color: #fff;
+		}
 		p {
 			margin-bottom: 0;
 		}
-		a {
+		.absolute-link {
 			position: absolute;
 			left: 0;
 			top: 0;
