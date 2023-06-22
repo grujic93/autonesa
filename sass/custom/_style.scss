@@ -369,7 +369,7 @@ p:empty {
 	&.uk-sticky-below {
 		.header-logo {
 			img {
-				width: 80px;
+				width: 8rem;
 			}
 		}
 	}
@@ -377,7 +377,7 @@ p:empty {
 		img {
 			position: relative;
 			z-index: 30;
-			width: 100px;
+			width: 10rem;
 			transition: all .4s ease;
 		}
 	}
